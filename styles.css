@@ -1,0 +1,372 @@
+/* FilaMatch Landing Page Styles */
+/* Color palette from app */
+
+:root {
+  --primary: #1A1A2E;
+  --primary-dark: #0F0F1A;
+  --accent: #E94560;
+  --accent-light: #FF6B6B;
+  --teal: #4ECDC4;
+  --teal-dark: #45B7AA;
+  --background: #FAFAFA;
+  --surface: #FFFFFF;
+  --text-primary: #1A1A2E;
+  --text-secondary: #6B7280;
+  --text-tertiary: #9CA3AF;
+  --border: #E5E7EB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 80px 20px 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: var(--background);
+  transform: skewY(-3deg);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3));
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  font-size: 1.35rem;
+  opacity: 0.9;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+.store-badge {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.store-badge:hover {
+  transform: scale(1.05);
+}
+
+.store-badge img {
+  height: 54px;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: var(--text-primary);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.feature-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(26, 26, 46, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(26, 26, 46, 0.12);
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 28px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+  background: var(--primary);
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.how-it-works::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: var(--background);
+  transform: skewY(-3deg);
+}
+
+.how-it-works .section-title {
+  color: white;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+  min-width: 180px;
+  max-width: 240px;
+}
+
+.step-number {
+  width: 56px;
+  height: 56px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 16px;
+}
+
+.step h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.step p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.step-arrow {
+  font-size: 2rem;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+/* Privacy Section */
+.privacy-section {
+  padding: 60px 20px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.privacy-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+.privacy-section p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.privacy-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.privacy-link:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary-dark);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.footer .copyright {
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+  margin-top: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* Privacy Page Specific */
+.privacy-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.privacy-page h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.privacy-page .last-updated {
+  color: var(--text-tertiary);
+  margin-bottom: 32px;
+}
+
+.privacy-page h2 {
+  font-size: 1.35rem;
+  margin: 32px 0 12px;
+  color: var(--text-primary);
+}
+
+.privacy-page p,
+.privacy-page ul {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.privacy-page ul {
+  padding-left: 24px;
+}
+
+.privacy-page li {
+  margin-bottom: 8px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
