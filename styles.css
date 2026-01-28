@@ -166,9 +166,11 @@ body {
 
 /* Screenshots Section */
 .screenshots {
-  padding: 80px 20px;
+  padding: 80px 20px 120px;
   background: var(--surface);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .screenshots-placeholder {
