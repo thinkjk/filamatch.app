@@ -97,6 +97,14 @@ body {
   height: 54px;
 }
 
+.testing-notice {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: var(--teal);
+  opacity: 0.9;
+  font-weight: 500;
+}
+
 /* Features Section */
 .features {
   padding: 80px 20px;
@@ -154,6 +162,33 @@ body {
 .feature-card p {
   color: var(--text-secondary);
   font-size: 0.95rem;
+}
+
+/* Screenshots Section */
+.screenshots {
+  padding: 80px 20px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.screenshots-placeholder {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background: var(--background);
+  border: 2px dashed var(--border);
+  border-radius: 16px;
+}
+
+.placeholder-icon {
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
+}
+
+.screenshots-placeholder p {
+  color: var(--text-tertiary);
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 /* How It Works Section */
