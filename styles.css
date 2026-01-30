@@ -84,6 +84,14 @@ body {
   font-weight: 400;
 }
 
+.store-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .store-badge {
   display: inline-block;
   transition: transform 0.2s ease;
@@ -95,6 +103,14 @@ body {
 
 .store-badge img {
   height: 54px;
+}
+
+.store-badge-coming-soon {
+  cursor: default;
+}
+
+.store-badge-coming-soon:hover {
+  transform: none;
 }
 
 .testing-notice {
