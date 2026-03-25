@@ -101,16 +101,13 @@ body {
   transform: scale(1.05);
 }
 
-.store-badge img {
-  height: 54px;
+.store-badge-google img {
+  height: 60px;
+  margin: -10px;
 }
 
-.store-badge-coming-soon {
-  cursor: default;
-}
-
-.store-badge-coming-soon:hover {
-  transform: none;
+.store-badge-apple img {
+  height: 40px;
 }
 
 
